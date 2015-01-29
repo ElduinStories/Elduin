@@ -1,0 +1,56 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\newcommand{\ruler}{\noindent\hrulefill\\}  
+\begin{document}
+\begin{center}
+\textsc{\Large{Planar Physics}}\\
+Tyler
+\end{center}
+\ruler
+\textbf{Alignment}\\
+Each plane is characterized by its alignment. A plane's alignment is the concentrations of each of the elements in the plane (this is an average things such as fire obviously contain more ignis then aqua).\\
+
+The easiest manner to represent this is a 6 dimensional vector with values from 0 to 1. (Ordinieum, Discordia, Terra, Aer, Ignis, Aqua). The alignments of the furthest planes where each Primal resides is a pure alignment with their element. Yalvor has the alignment (0,0,1,1,1,1).\\
+
+
+\noindent\textbf{Locations}\\
+A plane's location in the octahedron defined by points in three dimensions. The extreme points (and the planes that reside there are:\\
+
+\noindent Valcor (Ignis): (1,0,0)\\
+Ujya (Aqua): (-1,0,0)\\
+Toke (Terra): (0,1,0)\\
+Ajor (Aer):  (0,-1,0)\\
+Cartibe (Ordinieum): (0,0,2)\\
+Frantor (Discordia): (0,0,-2)\\
+
+
+\noindent\textbf{Planar Dynamics}\\
+A plane with alignment (o,d,t,a,i,q) located at point $\overrightarrow{p} = (x,y,z)$ experiences forces:\\
+\begin{equation}
+F = \sum_{c\in \{o,d,t,a,i,q\}} k_c*\frac{\overrightarrow{d_c}}{\vert\overrightarrow{d_c}\vert}
+\end{equation}
+
+Where $\overrightarrow{d_c}=\overrightarrow{P_c}-\overrightarrow{p}$ in this equation $\overrightarrow{P_c}$ is the position of that component's extreme point.
+
+These forces can be thought of as if there were rubber bands from the extreme points to a plane's current location. The coefficient of force from a particular component is the planes alignment to that component\\
+
+\noindent\textbf{Ether Drag}\\
+A plane moving through the ether experiences a drag force proportional to its velocity in the ether in the opposite direction.\\
+
+\noindent\textbf{Planar Repulsion}\\
+Two planes will by nature repel one another. This force is generally weaker then the ones guiding planar dynamics given by:
+
+\[
+F_r = -k_r*\frac{\hat{d_p}}{\vert\overrightarrow{d_p}\vert^3}
+\]
+
+Here $\overrightarrow{d_p}$ is the vector pointing from the plane in question to the other plane.\\
+
+\noindent\textbf{Planar Collisions}\\
+As planes do not have a precise boundary (they instead of a fuzzy image of the plane itself as it merges with the ether) determining if two planes have collided is not in general a well defined question. Two planes are typically considered to have softly collided if their auras overlap. When this occurs, transit between the two planes is possible for entities knowing how to teleport through the ethereal plane. A hard collision occurs when the planes are close enough to traverse without passing first through the ethereal plane. This typically is possible when the interplanar distance is less then 0.005 (temp figure, simulate collisions to determine if this is a reasonable figure... NB this value in essence will specify an upper limit on how many planes there can be without excessive collisions by default. Higher drag coefficients could prevent really bad situations from occurring
+
+\end{document}
