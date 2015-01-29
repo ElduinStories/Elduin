@@ -45,12 +45,19 @@ A plane moving through the ether experiences a drag force proportional to its ve
 Two planes will by nature repel one another. This force is generally weaker then the ones guiding planar dynamics given by:
 
 \[
-F_r = -k_r*\frac{\hat{d_p}}{\vert\\frac{1}{R_m}*overrightarrow{d_p}\vert^3}
+F_r = -k_r*\frac{\hat{d_p}}{\vert\frac{1}{R_m}*\overrightarrow{d_p}\vert^3}
 \]
 
 Here $\overrightarrow{d_p}$ is the vector pointing from the plane in question to the other plane. And $R_m$ is a corrective factor to rescale the repulsion distance. (If it was not there almost every plane would have a non-trivial interaction with each other)\\
 
 \noindent\textbf{Planar Collisions}\\
-As planes do not have a precise boundary (they instead of a fuzzy image of the plane itself as it merges with the ether) determining if two planes have collided is not in general a well defined question. Two planes are typically considered to have softly collided if their auras overlap. When this occurs, transit between the two planes is possible for entities knowing how to teleport through the ethereal plane. A hard collision occurs when the planes are close enough to traverse without passing first through the ethereal plane. This typically is possible when the interplanar distance is less then 0.005 (temp figure, simulate collisions to determine if this is a reasonable figure... NB this value in essence will specify an upper limit on how many planes there can be without excessive collisions by default. Higher drag coefficients could prevent really bad situations from occurring
+As planes do not have a precise boundary (they instead of a fuzzy image of the plane itself as it merges with the ether) determining if two planes have collided is not in general a well defined question. Two planes are typically considered to have softly collided if their auras overlap. When this occurs, transit between the two planes is possible for entities knowing how to teleport through the ethereal plane. A hard collision occurs when the planes are close enough to traverse without passing first through the ethereal plane. This typically is possible when the interplanar distance is less then 0.005 (temp figure, simulate collisions to determine if this is a reasonable figure... NB this value in essence will specify an upper limit on how many planes there can be without excessive collisions by default. Higher drag coefficients could prevent really bad situations from occurring.\\
 
+\noindent\textbf{Planar Inertia}\\
+The above has been described in terms of forces as such a notion of inertia must exist in order to simulate. I propose one of two schemes.
+
+\begin{enumerate}
+\item All planes have equal unit inertia transforming the above equaltions to accerations directly.
+\item Planes have inertia proportional to the sum of their alignment densities. 
+\end{enumerate}
 \end{document}
