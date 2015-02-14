@@ -1,0 +1,8 @@
+Modifier
+{"Name" : "", "Effect" : 0, "Description" : ""}
+
+Weapon Template
+{"Name" : "", "Type" : "", "Range" : "", "Ammunition" : "", "Attack-bonus" : 0, "Critical" : 0, "Damage" : {DICE TYPE}}
+
+Skills Template
+{"Name" : "", "Score" : 0, "Mod" : []}

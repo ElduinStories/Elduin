@@ -1,0 +1,62 @@
+{
+	"ID" : "",
+	"Creator" : "",
+	"Name" : "",
+	"Alias" : [],
+	"Gender" : "",
+	"Race" : [],
+	"Mother" : "",
+	"Father" : "",
+	"Class" : [],
+
+	"Birthdate" : {"Year" : null, "Month" : null, "Day" : null},
+	"Size" : "",
+	"Height" : {"Feet" : null, "Inches" : null},
+	"Weight" : null,
+	"Hair" : {"Colour" : "", "Description" : ""},
+	"Eyes" : {"Colour" : "", "Description" : ""},
+
+	"Alignment" : {"Ethical" : "", "Moral" : "", "Temperment" : ""},
+	TODO: This section should contain a sequence of descriptions for motivations attitudes relationships and generally known knowledge,
+
+	"Stats" : {
+		"HP" : {"Value" : null, "Mod" : []},
+		"DR" : {"Value" : null, "Mod" : []},
+		"Movement" : {
+			"Speed" : {"Value" : null, "Mod" : []},
+			"Fly" : {"Value" : null, "Mod" : []},
+			"Swim" : {"Value" : null, "Mod" : []},
+			"Climb" : {"Value" : null, "Mod" : []},
+			"Burrow" : {"Value" : null, "Mod" : []},
+		},
+		"Abilities" : {
+			"Str" : {"Score" : 0, "Mod" : []},
+			"Dex" : {"Score" : 0, "Mod" : []},
+			"Con" : {"Score" : 0, "Mod" : []},
+			"Int" : {"Score" : 0, "Mod" : []},
+			"Wis" : {"Score" : 0, "Mod" : []},
+			"Cha" : {"Score" : 0, "Mod" : []},
+		},
+		"Combat" : {
+			"AC" : {"Score" : 10, "Mod" : []},
+			"Initiative" : {"Score" : 0, "Mod" : []},
+			"Touch" : {"Score" : 0, "Mod" : []},
+			"Flat" : {"Score" : 0, "Mod" : []},
+			"Fortitude" : {"Score" : 0, "Mod" : []},
+			"Reflex" : {"Score" : 0, "Mod" : []},
+			"Will" : {"Score" : 0, "Mod" : []},
+			"BAB" : {"Score" : 0, "Mod" : []},
+			"SR" : {"Score" : 0, "Mod" : []},
+			"CMB" : {"Score" : 0, "Mod" : []},
+			"CMD" : {"Score" : 10, "Mod" : []},
+		},
+		
+	},
+	"Weapons" : [],
+	"Skills" : [],
+	"Languages" : [],
+	
+
+
+
+}

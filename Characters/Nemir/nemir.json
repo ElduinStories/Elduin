@@ -1,0 +1,16 @@
+{
+	"ID" : "nemir",
+	"Type" : "Character",
+	"Name" : "Nemir Galontaur",
+	"Alias" : [
+		"Nemir",
+		"Nemir of Aleris"
+	],
+	"Race" : [
+		"Elf"
+	],
+	"Gender" : "Male",
+	"Alignment" : {"Ethical" : "Lawful", "Moral" : "Good", "Temperment" : "Chaotic"},
+	"Mother" : "avial",
+	"Father" : "lenwe"
+}
