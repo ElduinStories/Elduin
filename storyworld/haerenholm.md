@@ -1,0 +1,1 @@
+{"type":"create","objid":"haerenholm","type":"location","time":{"system":"AET","age":2,"yen":4760},"eventdesc":"Haerenhom was the first home of the House of Haeren. Settled near the end of the first age along the Ybiss River."}

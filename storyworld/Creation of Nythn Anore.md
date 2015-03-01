@@ -1,0 +1,13 @@
+This is the story of the house of haeren and the founding of nythn anore
+
+The House of Haeren was one of the earlier houses to be settled formed late in the first age. They settled on the south shore of the Ybiss river not far from Lake Diihm which it flows into. The soil here is rich and excellent for farming and Haerenholm, their dwelling in these parts prospered for many years.
+
+But it was not long until their prosperity attracted the attention of their neighbours. Most raids were inconsequential from smaller groups but those from the House of Elenviel who resided not far to the southwest and were nearly equal in numbers caused a great deal of trouble for Haerenholm.
+
+Tensions between the two Houses escalated until early in the 207th yen of the second age when in a surprise attack that the House of Elenviel launched with some of the other surrounding groups managed to kill most members of Haerenholm and burned Haerenholm. Seeing there was nothing left that they could fight for, the survivors led by Ghilwen the eldest of then, fled up along the Ybiss river towards the western mountain range. The soil here was poor but the mountains offered natural protection from others. Ghilwen sent out a couple scounts looking for a new potential home and they came back a month later reporting they had found a protected valley in the mountains with a small river. Here the soil seemed to be slightly better then the surroundings.
+
+At this point the survivors were in bad shape and Ghilwen decided she had no other options but to settle in that valley which came to be known as Saasta. Over the following months they gathered as descretely as possible supplies to set up a sustainable settlement. The ground proved difficult to work but through perserverance eventually the rocky soil became suitable. They would not learn for many years yet that this rocky ground would eventually provide for them far better then the poor soil ever would.
+
+The region they had settled in happened to be rich in metals and other minerals. A discovery which was made some years later by accident. The development of better metal tools and blacksmithing skills led to try and find richer veins of the material instead of collecting the ores from the river and soil. It was discovered that not too far up in a valley in the mountains to the north, next to a luminescent blue lake there were several rich veins. It was then in the 246th yen of the second age a meer 39 yen after their flee to the Saastra Valley that the settlement of Nythn Anore was established next to Lake Anore. Soon after the Homely Home of Haeren was established in that remote protected valley.
+
+That is how the House of Haeren came to reside at Nythn Anore.

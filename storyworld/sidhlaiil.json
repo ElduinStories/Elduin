@@ -1,0 +1,5 @@
+{"time":{"system":"AET","date":{"age":1,"yen":4640}},
+"eventdesc":"Birth of Sidhlaiil",
+"actions":[
+	{"type":"create","objid":"sidhlaiil","objname":"sidhlaiil"}
+]}

@@ -1,0 +1,26 @@
+storyworld notes
+
+Events
+actions[]:
+	type:
+		- create <objid,objname,type> : Creates a new object with the data supplied. objid, objname required. if type is present it will copy a template object otherwise a blank object is created.
+
+		- modify <objid,ops[]> : Performs the modifications outlined in the array "ops"
+			- ops[]:
+				- field: name of the field to modify, if the field is nested this should be the path to it.
+				- action: type of action to perform on that field
+					- options:
+						- add-field: Adds the field if it does not exist. if it does defaults to mod-field "value" is the type: "kv" "dict" or "array"
+						- add-element: Adds an element of "value" to the array field. (if not array causes error)
+						- mod: Changes the value of kv field (fails on dicts or arrays)
+						- rm-element: Removes the element of "value" from an array. If multiple identical ones exist, removes the first
+						- rm-field: Removes a field and all values contained within. ("value" ignored for this)
+				- value: does different things based on the action being called.
+
+		- delete [objid] : Sets the built in "end" date. Modification of this object after this point will cause errors.
+
+time{}:
+	- system : name of time system to use. (These must be created elsewhere as templates)
+	- date{} : date object containing a series of fields for time keeping. These fields must correspond to the template file which will contain rules of how to translate to UTS (Universal Time System) 
+
+eventdesc: Stores a description of what happens in this event.

@@ -1,0 +1,1 @@
+I have been struggling with the concepts of integration between storylines. I'm thinking that using tags in normal documents might work. going to give it a shot and experiment with some basics. Nythn Anore shall be the test bed.

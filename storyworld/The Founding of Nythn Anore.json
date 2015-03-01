@@ -1,0 +1,260 @@
+{
+	"storyline":"The Founding of Nythn Anore",
+	"styid":"nafounding",
+	"events":[
+		#A Future Leader
+		{"time":{"system":"AET","date":{"age":1,"yen":4640}},
+		"eventdesc":"Birth of Sidhlaiil",
+		"actions":[
+			{"type":"create","objid":"sidhlaiil","objname":"Sidhlaiil","template":"character"}
+			{"type":"modify","objid":"sidhlaiil","ops":[
+				{"field":"gender","action":"modify","value":"male"},
+			]}
+		]},
+
+		#A first Home
+		{"time":{"system":"AET","date":{"age":1,"yen":4760}},
+		"eventdesc":"Haerenholm was the first home of the House of Haeren. Settled near the end of the first age along the Ybiss River.",
+		"actions":[
+			{"type":"create","objid":"haerenholm","objname":"Haerenholm","template":"elf-home"},
+			{"type":"create","objid":"haeren","objname":"House of Haeren","template":"elf-house"}
+			{"type":"modify","objid":"haerenholm","ops":[
+				{"field":"family","action":"modify","value":"haeren"},
+				{"field":"description","action":"modify","value":"The settlement of the House of Haeren, Located on the southern shore of the Ybis River. Surrounded my fertile land"},
+				{"field":"population","action":"modify","value":100}
+			]}
+			{"type":"modify","objid":"aleris","ops":[
+				{"field":"locations","action":"add-element","value":"haerenholm"}
+			]}
+			{"type":"modify","objid":"haeren","ops":[
+				{"field":"head","action":"modify","value":"sidhlaiil"}
+				{"field":"population","action":"modify","value":100}
+				{"field":"members","action":"add-element","value":"sidhlaiil"}
+				{"field":"location","action":"modify","value":"haerenholm"}
+			]}
+		]},
+
+		#Erurion
+		{"time":{"system":"AET","date":{"age":1,"yen":4772}},
+		"eventdesc":"Birth of Erurion",
+		"actions":[
+			{"type":"create","objid":"erurion","objname":"Erurion","template":"character"},
+			{"type":"modify","objid":"erurion","ops":[
+				{"field":"father","action":"modify","value":"sidhlaiil"},
+				{"field":"gender","action":"modify","value":"male"},
+			]},
+			{"type":"modify","objid":"sidhlaiil","ops":[
+				{"field":"offspring","action":"add-element","value":"erurion"},
+			]}
+		]},
+
+		#Death of Sidhlaiil
+		{"time":{"system":"AET","date":{"age":1,"yen":4902}},
+		"eventdesc":"The Death of Sidhlaiil (old age) and his succession by his only son Erurion. Sidhlaiil's body was burned per custom",
+		"actions":[
+			{"type":"delete","objid":"sidhlaiil"}
+			{"type":"modify","objid":"haeren","ops":[
+				{"field":"head","action":"modify","value":"erurion"}
+				{"field":"members","action":"rm-element","value":"sidhlaiil"}
+			]}
+		]},
+
+		#Thaldor
+		{"time":{"system":"AET","date":{"age":1,"yen":4971}},
+		"eventdesc":"Birth of Thaldor",
+		"actions":[
+			{"type":"create","objid":"thaldor","objname":"Thaldor","template":"character"},
+			{"type":"modify","objid":"thaldor","ops":[
+				{"field":"father","action":"modify","value":"erurion"},
+				{"field":"gender","action":"modify","value":"male"},
+			]},
+			{"type":"modify","objid":"erurion","ops":[
+				{"field":"offspring","action":"add-element","value":"thaldor"},
+			]}
+		]},
+
+		# Tanron
+		{"time":{"system":"AET","date":{"age":1,"yen":4941}},
+		"eventdesc":"Birth of Tanron",
+		"actions":[
+			{"type":"create","objid":"tanron","objname":"Tanron","template":"character"}
+			{"type":"modify","objid":"tanron","ops":[
+				{"field":"gender","action":"modify","value":"male"}
+			]}
+			
+		]},
+
+		#A Neigbour
+		{"time":{"system":"AET","date":{"age":2,"yen":23}},
+		"eventdesc":"The House of Elenviel is founded to the south west of Haerenholm",
+		"actions":[
+			{"type":"create","objid":"elendale","objname":"Elendale","template":"elf-home"},
+			{"type":"create","objid":"elenviel","objname":"House of Elenviel","template":"elf-house"},
+			{"type":"modify","objid":"elendale","ops":[
+				{"field":"family","action":"modify","value":"elenviel"},
+				{"field":"description","action":"modify","value":"The settlement of the House of Elenviel, Located 30 km southwest of Haerenholm"},
+				{"field":"population","action":"modify","value":75}
+			]}
+			{"type":"modify","objid":"aleris","ops":[
+				{"field":"locations","action":"add-element","value":"elendale"}
+			]}
+			{"type":"modify","objid":"elendale","ops":[
+				{"field":"head","action":"modify","value":"tanron"}
+				{"field":"population","action":"modify","value":75}
+				{"field":"members","action":"add-element","value":"tanron"}
+				{"field":"location","action":"modify","value":"elendale"}
+		]},
+
+		#Prosperous Years
+		{"time":{"system":"AET","date":{"age":2,"yen":30}},
+		"eventdesc":"Owing to the many years of good crops and good living, The population of Haerenholm has grown. This prosperity has started attracting attention of bandits",
+		"actions":[
+			{"type":"modify","objid":"haeren","ops":[
+				{"field":"population","action":"modify","value":174}
+			]},
+			{"type":"modify","objid":"haerenholm","ops":[
+				{"field":"population","action":"modify","value":174}
+			]},
+		]},
+
+		#Ghilwen
+		{"time":{"system":"AET","date":{"age":2,"yen":52}},
+		"eventdesc":"Birth of Ghilwen",
+		"actions":[
+			{"type":"create","objid":"ghilwen","objname":"Ghilwen","template":"character"},
+			{"type":"modify","objid":"ghilwen","ops":[
+				{"field":"father","action":"modify","value":"erurion"},
+				{"field":"gender","action":"modify","value":"female"},
+			]},
+			{"type":"modify","objid":"erurion","ops":[
+				{"field":"offspring","action":"add-element","value":"ghilwen"},
+			]}
+		]},
+
+		#Death of Erurion
+		{"time":{"system":"AET","date":{"age":2,"yen":79}},
+		"eventdesc":"The Death of Erurion (old age) and his succession by his only son Thaldor. Erurion's body was burned per custom as well as a garden built in his honour for the years of prosperity he brought.",
+		"actions":[
+			{"type":"delete","objid":"erurion"}
+			{"type":"modify","objid":"haeren","ops":[
+				{"field":"head","action":"modify","value":"thaldor"}
+				{"field":"members","action":"rm-element","value":"erurion"}
+			]}
+		]},
+
+		#Teiron
+		{"time":{"system":"AET","date":{"age":2,"yen":120}},
+		"eventdesc":"Birth of Teiron",
+		"actions":[
+			{"type":"create","objid":"teiron","objname":"Teiron","template":"character"}
+			{"type":"modify","objid":"teiron","ops":[
+				{"field":"father","action":"modify","value":"tanron"},
+				{"field":"gender","action":"modify","value":"male"}
+			]},
+			{"type":"modify","objid":"tanron","ops":[
+				{"field":"offspring","action":"add-element","value":"teiron"},
+			]}
+		]},
+
+		#Hostilities
+		{"time":{"system":"AET","date":{"age":2,"yen":132}},
+		"eventdesc":"The fertile lands surronding Haerenholm have attracked attacks from various bandits as well as the House of Elenviel",
+		"actions":[
+			{"type":"modify","objid":"haeren","ops":[
+				{"field":"relations","action":"add-kv","key":"elenviel","value":"The House of Elenveil is making advances on Haeren lands. Haeren defends itself"},
+				{"field":"ongoing","action":"add-element","value":"The House of Haeren and its lands are threatened by bandits and the House of Elenveil"},
+			]},
+			{"type":"modify","objid":"elenviel","ops":[
+				{"field":"relations","action":"add-kv","key":"haeren","value":"The House of Haeren defends itself and is hostile towards Elendale"},
+				{"field":"ongoing","action":"add-element","value":"The House of Elenveil is agressive towards Haerenholm and its lands"},
+			]}
+		]},
+
+		#Tanron's Fall in Battle
+		{"time":{"system":"AET","date":{"age":2,"yen":157}},
+		"eventdesc":"The House of Haeren kills Tanron leader of the House of Elenveil in response to hostilities",
+		"actions":[
+			{"type":"delete","objid":"tanron"}
+			{"type":"modify","objid":"elenviel","ops":[
+				{"field":"head","action":"modify","value":"teiron"}
+				{"field":"members","action":"rm-element","value":"tanron"}
+			]}
+			{"type":"modify","objid":"teiron","ops":[
+				{"field":"relations","action":"add-kv","key":"haeren","value":"Teiron is hateful of Haeren for the death of his father. Vows vengence"}
+			]}
+			{"type":"modify","objid":"haeren","ops":[
+				{"field":"relations","action":"add-kv","key":"elenviel","value":"Haerenholm and Elendale are in open hostilities towards each other"}
+			]}
+			{"type":"modify","objid":"elenviel","ops":[
+				{"field":"relations","action":"add-kv","key":"haeren","value":"Haerenholm and Elendale are in open hostilities towards each other"}
+			]}
+		]},
+
+		#Surprise attacks
+		{"time":{"system":"AET","date":{"age":2,"yen":207,"hemel":2}},
+		"eventdesc":"Elenveil along with some bandit groups led by Teiron launch an all out assault against Haerenholm, overwhelming their defenses, killing many of their members and burning Haerenholm to the ground. Amoung those killed is Thaldor. As a result his sister Ghilwen takes over. She collects those few survivors from Haerenholm as well as those who lived in the nearby area which had not been attacked to preserve the element of surprise. This allows Ghilwen to collect supplies for their escape from the area.",
+		"actions":[
+			{"type":"modify","objid":"haerenholm","ops":[
+				{"field":"family","action":"modify","value":null},
+				{"field":"population","action":"modify","value":0},
+				{"field":"residents","action":"clear"},
+				{"field":"description","action":"modify","value":"The once grand settlement of haerenholm in ruins and deserted."},
+			]}
+			{"type":"modify","objid":"haeren","ops":[
+				{"field":"population","action":"modify","value":46},
+				{"field":"location","action":"clear"}
+			]}
+			{"type":"delete","objid":"thaldor"}
+			{"type":"modify","objid":"haeren","ops":[
+				{"field":"head","action":"modify","value":"ghilwen"}
+				{"field":"members","action":"rm-element","value":"thaldor"}
+			]}
+		]},
+
+		#Search for a new home
+		{"time":{"system":"AET","date":{"age":2,"yen":207,"hemel":7}},
+		"eventdesc":"Ghilwen leads what remains of House Haeren away from their former home along the Ybiss River to the western mountain ranges. The soil here was poor but the mountains offered natural protection from others. Ghilwen sent out a couple scounts looking for a new potential home and they came back a month later reporting they had found a protected valley in the mountains with a small river. Here the soil seemed to be slightly better then the surroundings. At this point the survivors were in bad shape and Ghilwen decides she had no other options but to settle in that valley which came to be known as Saasta.",
+		"actions":[
+			{"type":"create","objid":"saasta","Valley of Saasta"}
+			{"type":"modify","objid":"haeren","ops":[
+				{"field":"population","action":"modify","value":32}
+			]}
+			{"type":"modify","objid":"saasta","ops":[
+				{"field":"family","action":"modify","value":"haeren"},
+				{"field":"description","action":"modify","value":"The first settlement of the House of Haeren after their flee from Haerenholm. The land around here is rocky and of poor quality for farming but over time it is improved. Saasta is Located inside a hidden valley in the western mountain range. There is a small river that falls off the cliff. The area is rich in minerals"},
+				{"field":"population","action":"modify","value":32}
+			]}
+		]},
+
+		#Riches of Aleris
+		{"time":{"system":"AET","date":{"age":2,"yen":247}},
+		"eventdesc":"It has been several years since settling in the Valley of Saasta. The house of Haeren has been making slow progress. By accident the presence of metal ore veins are discovered in the surrounding areas. A particularly rich vein is discovered to the north in a valley next to a luminescent blue lake. A mining operation is set up there and so Nythn Anore is founded",
+		"actions":[
+			{"type":"create","objid":"nythnanore","Nythn Anore"}
+			{"type":"modify","objid":"haeren","ops":[
+				{"field":"population","action":"modify","value":43}
+			]}
+			{"type":"modify","objid":"nythnanore","ops":[
+				{"field":"family","action":"modify","value":"haeren"},
+				{"field":"description","action":"modify","value":"Located next to the brilliant blue Lake Anore fed from glaciers further up in the mountains. Nythn Anore has only one entrance to the valley from the south making it highly defensible. Lake Anore flows into the falls of Anore. The House of Haeren set up a mining outpost up here in the north wall of the valley which is rich in iron."},
+				{"field":"population","action":"modify","value":12}
+			]}
+		]},
+
+		#Haeren's homely Home
+		{"time":{"system":"AET","date":{"age":2,"yen":287}},
+		"eventdesc":"The mining operation has benefited the House of Haeren immensely. Having produced more then they needed they now start trading the minerals to others. Worried that the value of the land they occupied would once again bring hostile parties however, Nythn Anore becomes their primary settlement and construction of a Homely House begins in and around the mountain at the deepest part of the valley. Saasta only has a few remaining residents remaining to tend the farms. Nythn Anore is fortified building on its existing natural defenses.",
+		"actions":[
+			{"type":"modify","objid":"haeren","ops":[
+				{"field":"population","action":"modify","value":78}
+				{"field":"status","action":"add-element","value":"Mining has brought prosperity in the form of trade with other houses."}
+			]},
+			{"type":"modify","objid":"saasta","ops":[
+				{"field":"population","action":"modify","value":16}
+			]},
+			{"type":"modify","objid":"nythnanore","ops":[
+				{"field":"population","action":"modify","value":62}
+			]}
+		]},
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"template-name":"elf-home",
+	"inherit":"standard",
+	"fields":[
+		{"name":"family","form":"kv","type":"ref","default":null},
+		{"name":"population","form":"kv","type":"int","default":0},
+		{"name":"residents","form":"array","type":"ref"},
+		{"name":"places","form":"array","type":"ref"}
+	],
+}
